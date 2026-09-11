@@ -136,14 +136,13 @@
   }
   @media print{
     body{background:#fff;}
-    .page{box-shadow:none; margin:0;}
+    .page{box-shadow:none; margin:0; overflow:visible; border-radius:0;}
     .print-btn{display:none;}
     .keypoint, .referral-card, .warning-box, .risk-box, .transit-callout,
-    .checklist li, .path-card, .sign-off, h2, .hero{
+    .checklist li, .path-card, .sign-off, .hero{
       break-inside:avoid; page-break-inside:avoid;
     }
-    section{break-inside:avoid-page;}
-    h2{break-after:avoid;}
+    h2{break-after:avoid; page-break-after:avoid;}
   }
 </style>
 </head>
